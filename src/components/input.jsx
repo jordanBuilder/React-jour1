@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-function Input({value, onChange, onClick}) {
+function Input({ value, onChange, onSubmitButton }) {
     return <>
-        <input type="text" name="" id="" value={value} onChange={(e)=>{onChange(e.target.value)}} />
-        <button onClick={onClick}>
-            Ajouter une Todo
+        <input type="text" value={value} onChange={onChange} />
+        <button onClick={onSubmitButton}>
+            Ajouter un Todo
         </button>
     </>
 }
